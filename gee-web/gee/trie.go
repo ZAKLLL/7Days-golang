@@ -1,6 +1,8 @@
 package gee
 
-import "strings"
+import (
+	"strings"
+)
 
 type node struct {
 	pattern  string  // 待匹配路由，例如 /p/:lang
@@ -65,4 +67,16 @@ func (n *node) search(parts []string, height int) *node {
 	}
 
 	return nil
+}
+
+// /
+// /hello
+// /hi/:user/do
+// /hi/*/v1
+// /hi/*
+// /hi/*/:lang/zzz
+//
+
+func main() {
+
 }

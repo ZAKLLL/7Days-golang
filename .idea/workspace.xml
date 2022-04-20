@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="" />
+    <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gee-web/gee/trie_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-web/gee/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-web/gee/gee.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/gee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-web/gee/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-web/gee/trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +27,9 @@
     </option>
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoDepProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -42,17 +53,24 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "false",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/Zakl",
+    "last_opened_file_path": "D:/studyProjects/7Days-golang/gee-web/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\studyProjects\7Days-golang\gee-web\gee" />
+      <recent name="D:\studyProjects\7Days-golang\gee-web\gee\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.Test in gee">
     <configuration name="go build gee-web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
       <working_directory value="$PROJECT_DIR$/gee-web" />
@@ -62,8 +80,20 @@
       <filePath value="$PROJECT_DIR$/gee-web/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="Test in gee" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days" />
+      <working_directory value="$PROJECT_DIR$/gee-web/gee" />
+      <kind value="PACKAGE" />
+      <package value="gee" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test in gee" />
         <item itemvalue="Go Build.go build gee-web" />
       </list>
     </recent_temporary>
@@ -72,7 +102,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="*(*&quot;string&quot;)(824634671888)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
