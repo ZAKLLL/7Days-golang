@@ -70,14 +70,21 @@ func (r *router) handle(c *Context) {
 
 //只允许一个*
 func parsePattern(pattern string) []string {
+	pattern = strings.TrimSpace(pattern)
+	if pattern == "/" {
+		return []string{""}
+	}
 	vs := strings.Split(pattern, "/")
 	ret := make([]string, 0)
-	for _, item := range vs {
+	for index, item := range vs {
+		item = strings.TrimSpace(item)
 		if item != "" {
-			ret = append(ret, item)
 			if item[0] == '*' {
-				break
+				if !(item == "*" || item == "**") || index != len(vs)-1 {
+					log.Fatalf("url pattern仅支持单个 /* 和 /** 模式,并以/* 或 /** 结尾! 当前pattern: %s", pattern)
+				}
 			}
+			ret = append(ret, item)
 		}
 	}
 	return ret
