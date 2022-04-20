@@ -22,18 +22,17 @@ func main() {
 		c.String(http.StatusOK, "hello %s, you're at \n", c.Query("user"))
 	})
 
-	r.GET("/hi/*/v1", func(c *gee.Context) {
-		log.Printf("/hi/*/v1")
-		c.String(http.StatusOK, "hello %s, you're at \n", c.Query("user"))
-	})
-
 	r.GET("/hi/*", func(c *gee.Context) {
 		log.Printf("/hi/*")
 		c.String(http.StatusOK, "hello %s, you're at \n", c.Query("user"))
 	})
+	r.GET("/hi/**", func(c *gee.Context) {
+		log.Printf("/hi/**")
+		c.String(http.StatusOK, "hello %s, you're at \n", c.Query("user"))
+	})
 
-	r.GET("/hi/*/:lang/zzz", func(c *gee.Context) {
-		log.Printf("/hi/*/:lang/zzz")
+	r.GET("/hi/v2/**", func(c *gee.Context) {
+		log.Printf("/hi/v2/**")
 		c.String(http.StatusOK, "hello %s, you're at \n", c.Query("user"))
 	})
 
