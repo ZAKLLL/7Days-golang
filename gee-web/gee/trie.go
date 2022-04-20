@@ -3,6 +3,7 @@ package gee
 import (
 	"log"
 	"sort"
+	"strings"
 )
 
 type node struct {
@@ -79,24 +80,48 @@ func (n *node) search(parts []string, height int) *node {
 
 	part := parts[height]
 	children := n.matchChildren(part)
+	indexMap := map[string]int{"": 0, ":": 1, "*": 2, "**": 3}
 	//children
 	sort.Slice(children, func(i, j int) bool {
 		a := children[i]
 		b := children[j]
-		// 优先精准
-		if !a.isWild && b.isWild {
-			return true
-		}
-		// :xx -> /* -> /**
-		if a.isWild && b.isWild {
-			if a.part == "**" {
-				return true
-			}
-			if a.part == "*" {
-				return true
+		af := ""
+		bf := ""
+		if a.isWild {
+			if strings.HasPrefix(a.part, ":") {
+				af = ":"
+			} else if strings.HasPrefix(a.part, "*") {
+				af = "*"
+			} else {
+				af = "**"
 			}
 		}
-		return false
+		if b.isWild {
+			if strings.HasPrefix(b.part, ":") {
+				bf = ":"
+			} else if strings.HasPrefix(b.part, "*") {
+				bf = "*"
+			} else {
+				bf = "**"
+			}
+		}
+		return indexMap[af] < indexMap[bf]
+		//children[j]
+
+		//// 优先精准
+		//if !a.isWild && b.isWild {
+		//	return true
+		//}
+		//// :xx -> /* -> /**
+		//if a.isWild && b.isWild {
+		//	if a.part == "**" {
+		//		return false
+		//	}
+		//	if a.part == "*" {
+		//		return false
+		//	}
+		//}
+		//return true
 	})
 	for _, child := range children {
 		result := child.search(parts, height+1)
@@ -104,18 +129,5 @@ func (n *node) search(parts []string, height int) *node {
 			return result
 		}
 	}
-
 	return nil
-}
-
-// /
-// /hello
-// /hi/:user/do
-// /hi/*/v1
-// /hi/*
-// /hi/*/:lang/zzz
-//
-
-func main() {
-
 }
