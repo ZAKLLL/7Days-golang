@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gee-web/gee/trie_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-web/gee/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/context.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-web/gee/gee.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/gee.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-web/gee/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-web/gee/trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/trie.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/studyProjects/7Days-golang/gee-web/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/10158&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
@@ -70,7 +66,7 @@
       <recent name="D:\studyProjects\7Days-golang\gee-web\gee\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test in gee">
+  <component name="RunManager" selected="Go Build.go build gee-web">
     <configuration name="go build gee-web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
       <working_directory value="$PROJECT_DIR$/gee-web" />
@@ -93,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test in gee" />
         <item itemvalue="Go Build.go build gee-web" />
+        <item itemvalue="Go Test.Test in gee" />
       </list>
     </recent_temporary>
   </component>
