@@ -11,6 +11,7 @@ import (
 type router struct {
 	handlers map[string]HandlerFunc
 	roots    map[string]*node
+	engine   *Engine
 }
 
 func newRouter() *router {
@@ -60,10 +61,17 @@ func (r *router) getRoute(method string, path string) (*node, map[string]string)
 }
 
 func (r *router) handle(c *Context) {
-	n, params := r.getRoute(c.Method, c.Path)
+	route, params := r.getRoute(c.Method, c.Path)
+	if route != nil {
+		//用route 来跟分组前缀匹配
+		for _, group := range r.engine.groups {
+			if strings.HasPrefix(route.pattern, group.prefix) {
+				c.handlers = append(c.handlers, group.middlewares...)
+			}
 
-	if n != nil {
-		key := c.Method + "-" + n.pattern
+		}
+
+		key := c.Method + "-" + route.pattern
 		c.Params = params
 		c.handlers = append(c.handlers, r.handlers[key])
 	} else {

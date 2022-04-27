@@ -28,11 +28,12 @@ type Context struct {
 
 func newContext(w http.ResponseWriter, req *http.Request) *Context {
 	return &Context{
-		Writer: w,
-		Req:    req,
-		Path:   req.URL.Path,
-		Method: req.Method,
-		index:  -1,
+		Writer:   w,
+		Req:      req,
+		Path:     req.URL.Path,
+		Method:   req.Method,
+		handlers: make([]HandlerFunc, 0),
+		index:    -1,
 	}
 }
 
