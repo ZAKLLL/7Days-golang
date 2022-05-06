@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="">
+    <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="feat: 添加cache,group 相关代码">
+      <change afterPath="$PROJECT_DIR$/gee-cache/geecache/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-cache/geecache/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-cache/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-web/gee/gee.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/gee/gee.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-web/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-web/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/byteview.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/byteview.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/geecache.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/geecache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/geecache_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/geecache_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/lru/lru.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/lru/lru.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/lru/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/lru/lru_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,47 +58,87 @@
     &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/10158&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/studyProjects/7Days-golang/gee-web/templates&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\studyProjects\7Days-golang\gee-web\templates" />
       <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\studyProjects\7Days-golang\gee-cache\geecache" />
+      <recent name="D:\studyProjects\7Days-golang\gee-cache\lru" />
       <recent name="D:\studyProjects\7Days-golang\gee-web\gee" />
       <recent name="D:\studyProjects\7Days-golang\gee-web\gee\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build gee-web">
-    <configuration name="go build gee-web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build gee-cache">
+    <configuration name="go build gee-cache" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-web" />
+      <working_directory value="$PROJECT_DIR$/gee-cache" />
       <kind value="PACKAGE" />
-      <package value="gee-web" />
+      <package value="gee-cache" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee-web/main.go" />
+      <filePath value="$PROJECT_DIR$/gee-cache/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="Test in gee" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGet in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-web/gee" />
+      <working_directory value="$PROJECT_DIR$/gee-cache" />
       <kind value="PACKAGE" />
-      <package value="gee" />
+      <package value="gee-cache" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest\E$" />
+      <pattern value="^\QTestGet\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetter in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days" />
+      <working_directory value="$PROJECT_DIR$/gee-cache" />
+      <kind value="PACKAGE" />
+      <package value="gee-cache" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetter\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestOnEvicted in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days" />
+      <working_directory value="$PROJECT_DIR$/gee-cache" />
+      <kind value="PACKAGE" />
+      <package value="gee-cache" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestOnEvicted\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRemoveoldest in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days" />
+      <working_directory value="$PROJECT_DIR$/gee-cache" />
+      <kind value="PACKAGE" />
+      <package value="gee-cache" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestRemoveoldest\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build gee-web" />
-        <item itemvalue="Go Test.Test in gee" />
+        <item itemvalue="Go Build.go build gee-cache" />
+        <item itemvalue="Go Test.TestGet in gee-cache" />
+        <item itemvalue="Go Test.TestGetter in gee-cache" />
+        <item itemvalue="Go Test.TestOnEvicted in gee-cache" />
+        <item itemvalue="Go Test.TestRemoveoldest in gee-cache" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +156,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat: 新增分组控制功能" />
+    <MESSAGE value="feat: 新增 中间件写法" />
+    <MESSAGE value="feat: 补充中间件 next函数 注释说明" />
+    <MESSAGE value="feat: 完善router,将请求url匹配 中间件由gee.ServeHTTP 移动到 route.handle 中进行处理" />
+    <MESSAGE value="feat: 添加静态资源服务" />
+    <MESSAGE value="feat: 添加html模板渲染功能" />
+    <MESSAGE value="feat: 添加lru代码" />
+    <MESSAGE value="feat: 添加cache,group 相关代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加cache,group 相关代码" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
