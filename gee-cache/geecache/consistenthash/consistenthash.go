@@ -55,5 +55,8 @@ func (m *Map) Get(key string) string {
 		return m.keys[i] >= hash
 	})
 
+	//这里之所以要idx%len(m.keys)
+	//是因为 二分搜索的情况下 idx 可能== len(m.keys),因为当前key对应的hash可能是比现有的hash值都大
+	//防止越界
 	return m.hashMap[m.keys[idx%len(m.keys)]]
 }
