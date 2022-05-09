@@ -9,11 +9,11 @@ import (
 // Hash maps bytes to uint32
 type Hash func(data []byte) uint32
 
-// Map constains all hashed keys
+// Map constains all hashed vNodes
 type Map struct {
 	hash     Hash
 	replicas int   //虚拟节点复制数量
-	keys     []int // Sorted
+	vNodes   []int // Sorted
 	hashMap  map[int]string
 }
 
@@ -30,33 +30,33 @@ func New(replicas int, fn Hash) *Map {
 	return m
 }
 
-// Add adds some keys to the hash.
-func (m *Map) Add(keys ...string) {
-	for _, key := range keys {
+// Add adds some vNodes to the hash.
+func (m *Map) Add(nodes ...string) {
+	for _, node := range nodes {
 		for i := 0; i < m.replicas; i++ {
-			hash := int(m.hash([]byte(strconv.Itoa(i) + key)))
-			m.keys = append(m.keys, hash)
-			m.hashMap[hash] = key
+			hash := int(m.hash([]byte(strconv.Itoa(i) + node)))
+			m.vNodes = append(m.vNodes, hash)
+			m.hashMap[hash] = node
 		}
 	}
-	sort.Ints(m.keys)
+	sort.Ints(m.vNodes)
 }
 
 // Get gets the closest item in the hash to the provided key.
 func (m *Map) Get(key string) string {
-	if len(m.keys) == 0 {
+	if len(m.vNodes) == 0 {
 		return ""
 	}
 
 	hash := int(m.hash([]byte(key)))
 	// Binary search for appropriate replica.
 	//二分查找第一个>=hash 值的key
-	idx := sort.Search(len(m.keys), func(i int) bool {
-		return m.keys[i] >= hash
+	idx := sort.Search(len(m.vNodes), func(i int) bool {
+		return m.vNodes[i] >= hash
 	})
 
-	//这里之所以要idx%len(m.keys)
-	//是因为 二分搜索的情况下 idx 可能== len(m.keys),因为当前key对应的hash可能是比现有的hash值都大
+	//这里之所以要idx%len(m.vNodes)
+	//是因为 二分搜索的情况下 idx 可能== len(m.vNodes),因为当前key对应的hash可能是比现有的hash值都大
 	//防止越界
-	return m.hashMap[m.keys[idx%len(m.keys)]]
+	return m.hashMap[m.vNodes[idx%len(m.vNodes)]]
 }
