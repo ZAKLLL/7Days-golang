@@ -52,13 +52,6 @@ func startAPIServer(apiAddr string, gee *geecache.Group) {
 }
 
 func Test_server(t *testing.T) {
-	//var port int
-	//var api bool
-	//flag.IntVar(&port, "port", 8001, "Geecache server port")
-	//flag.BoolVar(&api, "api", false, "Start a api server?")
-	//flag.Parse()
-	//port := 8001
-	//api := true
 
 	apiAddr := "http://localhost:9999"
 	addrMap := map[int]string{
@@ -75,6 +68,6 @@ func Test_server(t *testing.T) {
 	go startAPIServer(apiAddr, group)
 
 	go startCacheServer(addrMap[8002], addrs, createGroup())
-	go startCacheServer(addrMap[8003], addrs, createGroup())
-	startCacheServer(addrMap[8001], addrs, group)
+	go startCacheServer(addrMap[8001], addrs, createGroup())
+	startCacheServer(addrMap[8003], addrs, group)
 }
