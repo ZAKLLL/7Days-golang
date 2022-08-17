@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="feat: 添加cache,group 相关代码">
-      <change afterPath="$PROJECT_DIR$/gee-cache/geecache/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-cache/geecache/http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-cache/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-rpc/codec/codec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-rpc/codec/gob.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-rpc/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-rpc/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-rpc/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/byteview.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/byteview.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/geecache.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/geecache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/geecache_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/geecache_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/lru/lru.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/lru/lru.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/lru/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/geecache/lru/lru_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,37 +44,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/studyProjects/7Days-golang/gee-web/templates&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/github_projects/7Days-golang",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studyProjects\7Days-golang\gee-web\templates" />
       <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_projects\7Days-golang\gee-rpc\server" />
+      <recent name="D:\github_projects\7Days-golang\gee-rpc" />
       <recent name="D:\studyProjects\7Days-golang\gee-cache\geecache" />
       <recent name="D:\studyProjects\7Days-golang\gee-cache\lru" />
       <recent name="D:\studyProjects\7Days-golang\gee-web\gee" />
-      <recent name="D:\studyProjects\7Days-golang\gee-web\gee\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build gee-cache">
+  <component name="RunManager" selected="Go Build.go build gee-rpc">
     <configuration name="go build gee-cache" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
       <working_directory value="$PROJECT_DIR$/gee-cache" />
@@ -86,6 +87,15 @@
       <package value="gee-cache" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/gee-cache/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gee-rpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="7Days" />
+      <working_directory value="$PROJECT_DIR$/gee-rpc" />
+      <kind value="PACKAGE" />
+      <package value="gee-rpc" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/gee-rpc/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestGet in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -121,24 +131,13 @@
       <pattern value="^\QTestOnEvicted\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestRemoveoldest in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-cache" />
-      <kind value="PACKAGE" />
-      <package value="gee-cache" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestRemoveoldest\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build gee-rpc" />
         <item itemvalue="Go Build.go build gee-cache" />
         <item itemvalue="Go Test.TestGet in gee-cache" />
         <item itemvalue="Go Test.TestGetter in gee-cache" />
         <item itemvalue="Go Test.TestOnEvicted in gee-cache" />
-        <item itemvalue="Go Test.TestRemoveoldest in gee-cache" />
       </list>
     </recent_temporary>
   </component>
