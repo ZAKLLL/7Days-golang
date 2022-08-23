@@ -11,13 +11,18 @@ import (
 	"sync"
 )
 
+// 自定义魔数
 const MagicNumber = 0x3bef5c
 
+// Option 承载消息的编解码方式
+// | Option{MagicNumber: xxx, CodecType: xxx} | Header{ServiceMethod ...} | Body interface{} |
+// | <------      固定 JSON 编码      ------>  | <-------   编码方式由 CodeType 决定   ------->|
 type Option struct {
 	MagicNumber int        // MagicNumber marks this's a geerpc request
 	CodecType   codec.Type // client may choose different Codec to encode body
 }
 
+// DefaultOption 默认编解码方式
 var DefaultOption = &Option{
 	MagicNumber: MagicNumber,
 	CodecType:   codec.GobType,
@@ -57,6 +62,7 @@ func (server *Server) ServeConn(conn io.ReadWriteCloser) {
 	defer func() { _ = conn.Close() }()
 	var opt Option
 	if err := json.NewDecoder(conn).Decode(&opt); err != nil {
+		//if err := gob.NewDecoder(conn).Decode(&opt); err != nil {
 		log.Println("rpc server: options error: ", err)
 		return
 	}
@@ -139,7 +145,7 @@ func (server *Server) handleRequest(cc codec.Codec, req *request, sending *sync.
 	// TODO, should call registered rpc methods to get the right replyv
 	// day 1, just print argv and send a hello message
 	defer wg.Done()
-	log.Println(req.h, req.argv.Elem())
+	log.Println("server: ", req.h, req.argv.Elem())
 	req.replyv = reflect.ValueOf(fmt.Sprintf("geerpc resp %d", req.h.Seq))
 	server.sendResponse(cc, req.h, req.replyv.Interface(), sending)
 }

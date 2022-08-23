@@ -11,9 +11,9 @@ type Header struct {
 
 type Codec interface {
 	io.Closer
-	ReadHeader(*Header) error
-	ReadBody(interface{}) error
-	Write(*Header, interface{}) error
+	ReadHeader(*Header) error         // 对头部解码
+	ReadBody(interface{}) error       //对请求体解码
+	Write(*Header, interface{}) error //回写数据
 }
 
 type NewCodecFunc func(io.ReadWriteCloser) Codec

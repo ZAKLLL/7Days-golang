@@ -14,14 +14,14 @@ type GobCodec struct {
 	enc  *gob.Encoder
 }
 
-// todo ??
+// 此写法 确保 GobCodec 实现了Codec 的所有接口函数
 var _ Codec = (*GobCodec)(nil)
 
 func NewGobCodec(conn io.ReadWriteCloser) Codec {
 	buf := bufio.NewWriter(conn)
 	return &GobCodec{
 		conn: conn,
-		buf:  buf,
+		buf:  buf, //buf 是为了防止阻塞而创建的带缓冲的 Writer，一般这么做能提升性能。
 		dec:  gob.NewDecoder(conn),
 		enc:  gob.NewEncoder(buf),
 	}
