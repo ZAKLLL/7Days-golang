@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gee-rpc/service/servive_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-rpc/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-rpc/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-rpc/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/service/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-rpc/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/service/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,11 +76,11 @@
       <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_projects\7Days-golang\gee-rpc\service" />
       <recent name="D:\github_projects\7Days-golang\gee-rpc\server" />
       <recent name="D:\github_projects\7Days-golang\gee-rpc" />
       <recent name="D:\studyProjects\7Days-golang\gee-cache\geecache" />
       <recent name="D:\studyProjects\7Days-golang\gee-cache\lru" />
-      <recent name="D:\studyProjects\7Days-golang\gee-web\gee" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build gee-rpc">
@@ -109,35 +113,37 @@
       <pattern value="^\QTestGet\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGetter in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMethodType_Call in gee-rpc/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-cache" />
+      <working_directory value="$PROJECT_DIR$/gee-rpc/service" />
+      <root_directory value="$PROJECT_DIR$/gee-rpc" />
       <kind value="PACKAGE" />
-      <package value="gee-cache" />
+      <package value="gee-rpc/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGetter\E$" />
+      <pattern value="^\QTestMethodType_Call\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestOnEvicted in gee-cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNewService in gee-rpc/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-cache" />
+      <working_directory value="$PROJECT_DIR$/gee-rpc/service" />
+      <root_directory value="$PROJECT_DIR$/gee-rpc" />
       <kind value="PACKAGE" />
-      <package value="gee-cache" />
+      <package value="gee-rpc/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestOnEvicted\E$" />
+      <pattern value="^\QTestNewService\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build gee-rpc" />
+        <item itemvalue="Go Test.TestMethodType_Call in gee-rpc/service" />
+        <item itemvalue="Go Test.TestNewService in gee-rpc/service" />
         <item itemvalue="Go Build.go build gee-cache" />
         <item itemvalue="Go Test.TestGet in gee-cache" />
-        <item itemvalue="Go Test.TestGetter in gee-cache" />
-        <item itemvalue="Go Test.TestOnEvicted in gee-cache" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +175,8 @@
     <MESSAGE value="feat: 添加cache,group 相关代码" />
     <MESSAGE value="feat: 新增geerpc项目" />
     <MESSAGE value="feat: 新增geeRpc server 代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 新增geeRpc server 代码" />
+    <MESSAGE value="opt: 补充提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="opt: 补充提交" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -180,5 +187,8 @@
         <watch expression="*(*&quot;string&quot;)(824634671888)" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/7Days_golang$TestMethodType_Call_in_gee_rpc_service.out" NAME="TestMethodType_Call in gee-rpc/service Coverage Results" MODIFIED="1661306653689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
