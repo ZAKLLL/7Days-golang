@@ -1,8 +1,9 @@
 package main
 
 import (
+	"context"
 	_client "gee-rpc/client"
-	server "gee-rpc/service"
+	server "gee-rpc/server"
 	"log"
 	"net"
 	"sync"
@@ -47,8 +48,9 @@ func main() {
 		go func(i int) {
 			defer wg.Done()
 			args := &Args{Num1: i, Num2: i * i}
+			ctx, _ := context.WithTimeout(context.Background(), time.Second)
 			var reply int
-			if err := client.Call("Foo.Sum", args, &reply); err != nil {
+			if err := client.Call(ctx, "Foo.Sum", args, &reply); err != nil {
 				log.Fatal("call Foo.Sum error:", err)
 			}
 			log.Printf("%d + %d = %d", args.Num1, args.Num2, reply)
