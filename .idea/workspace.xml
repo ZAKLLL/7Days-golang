@@ -4,49 +4,32 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="opt: 补充提交">
+    <list default="true" id="54e5ebb7-d04e-444b-8c81-3533e3cd4ba0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/7Days.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/log/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-        <option value="Go Application" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Zakl &lt;1015849735@qq.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GoDepProject">
-    <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="281DalxHO1FwKG8tZV88Fy0UJQL" />
+  <component name="ProjectId" id="2Ja9bHUdC2QRC5khxgWDwxxQdMR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultGoTemplateProperty": "Go Application",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -55,89 +38,24 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "false",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/github_projects/gowebsocket",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/张家魁"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\studyProjects\7Days-golang\gee-web\templates" />
-      <recent name="D:\studyProjects\7Days-golang\gee-web\test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github_projects\7Days-golang\gee-rpc" />
-      <recent name="D:\github_projects\7Days-golang\gee-rpc\service" />
-      <recent name="D:\github_projects\7Days-golang\gee-rpc\server" />
-      <recent name="D:\studyProjects\7Days-golang\gee-cache\geecache" />
-      <recent name="D:\studyProjects\7Days-golang\gee-cache\lru" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Go Build.go build gee-orm/log">
-    <configuration name="go build gee-cache" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-cache" />
-      <kind value="PACKAGE" />
-      <package value="gee-cache" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee-cache/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build gee-orm/log" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
+  <component name="RunManager">
+    <configuration name="go build gee-orm" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm" />
       <kind value="PACKAGE" />
-      <package value="gee-orm/log" />
+      <package value="gee-orm" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee-orm/log/log.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build gee-rpc" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-rpc" />
-      <kind value="PACKAGE" />
-      <package value="gee-rpc" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee-rpc/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMethodType_Call in gee-rpc/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-rpc/service" />
-      <root_directory value="$PROJECT_DIR$/gee-rpc" />
-      <kind value="PACKAGE" />
-      <package value="gee-rpc/service" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestMethodType_Call\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestNewService in gee-rpc/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="7Days" />
-      <working_directory value="$PROJECT_DIR$/gee-rpc/service" />
-      <root_directory value="$PROJECT_DIR$/gee-rpc" />
-      <kind value="PACKAGE" />
-      <package value="gee-rpc/service" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestNewService\E$" />
+      <filePath value="$PROJECT_DIR$/gee-orm/main.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build gee-orm/log" />
-        <item itemvalue="Go Build.go build gee-rpc" />
-        <item itemvalue="Go Test.TestMethodType_Call in gee-rpc/service" />
-        <item itemvalue="Go Test.TestNewService in gee-rpc/service" />
-        <item itemvalue="Go Build.go build gee-cache" />
+        <item itemvalue="Go Build.go build gee-orm" />
       </list>
     </recent_temporary>
   </component>
@@ -145,44 +63,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat: 新增分组控制功能" />
-    <MESSAGE value="feat: 新增 中间件写法" />
-    <MESSAGE value="feat: 补充中间件 next函数 注释说明" />
-    <MESSAGE value="feat: 完善router,将请求url匹配 中间件由gee.ServeHTTP 移动到 route.handle 中进行处理" />
-    <MESSAGE value="feat: 添加静态资源服务" />
-    <MESSAGE value="feat: 添加html模板渲染功能" />
-    <MESSAGE value="feat: 添加lru代码" />
-    <MESSAGE value="feat: 添加cache,group 相关代码" />
-    <MESSAGE value="feat: 新增geerpc项目" />
-    <MESSAGE value="feat: 新增geeRpc server 代码" />
-    <MESSAGE value="opt: 补充提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="opt: 补充提交" />
-  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="GoApplicationRunConfiguration">
-        <watch expression="*(*&quot;string&quot;)(824634671888)" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/7Days_golang$TestMethodType_Call_in_gee_rpc_service.out" NAME="TestMethodType_Call in gee-rpc/service Coverage Results" MODIFIED="1661306653689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/gee-orm/main.go</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
