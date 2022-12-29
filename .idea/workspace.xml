@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5529d0d0-4998-45e5-b400-a8ea023ad07f" name="Default Changelist" comment="opt: 补充提交">
-      <change afterPath="$PROJECT_DIR$/gee-orm/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/log/log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/debug.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/registry/registry.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/xclient/discovery.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/xclient/discovery_gee.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-rpc/xclient/xclient.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/codec/codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/codec/codec.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/codec/gob.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/codec/gob.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/server/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-rpc/server/servive_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-rpc/service_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/log/log.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
