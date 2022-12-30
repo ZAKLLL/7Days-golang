@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e5ebb7-d04e-444b-8c81-3533e3cd4ba0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/7Days.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/dialect/dialect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/dialect/dialect_sqlite3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/geeorm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/schema/schema.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/schema/schema_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/session/raw.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/session/table.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/session/table_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/test_main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-cache/testMutliNode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/testMutliNode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/log/log.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Go Application" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
@@ -30,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go Application",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -43,7 +59,12 @@
     "last_opened_file_path": "C:/Users/张家魁"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_projects\7Days-golang\gee-orm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestName in gee-orm">
     <configuration name="go build gee-orm" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm" />
@@ -53,8 +74,45 @@
       <filePath value="$PROJECT_DIR$/gee-orm/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="TestName in gee-orm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
+      <working_directory value="$PROJECT_DIR$/gee-orm" />
+      <kind value="PACKAGE" />
+      <package value="gee-orm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestName\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestParse in gee-orm/schema" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
+      <working_directory value="$PROJECT_DIR$/gee-orm/schema" />
+      <root_directory value="$PROJECT_DIR$/gee-orm" />
+      <kind value="PACKAGE" />
+      <package value="gee-orm/schema" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestParse\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Engine in gee-orm" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
+      <working_directory value="$PROJECT_DIR$/gee-orm" />
+      <kind value="PACKAGE" />
+      <package value="gee-orm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Engine\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestName in gee-orm" />
+        <item itemvalue="Go Test.TestParse in gee-orm/schema" />
+        <item itemvalue="Go Test.Test_Engine in gee-orm" />
         <item itemvalue="Go Build.go build gee-orm" />
       </list>
     </recent_temporary>
@@ -63,18 +121,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add:gee-orm" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:gee-orm" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/gee-orm/main.go</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
