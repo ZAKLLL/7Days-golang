@@ -49,3 +49,21 @@ func TestName(t *testing.T) {
 
 	}
 }
+
+type TUser2 struct {
+	Name string `geeorm:"PRIMARY KEY"`
+	Age  int
+}
+
+func TestSession_CreateTable(t *testing.T) {
+
+	engine, _ := NewEngine("mysql", "root:root@tcp(localhost:3306)/geeorm")
+	defer engine.Close()
+	s := engine.NewSession()
+	s.Model(&TUser2{})
+	_ = s.DropTable()
+	_ = s.CreateTable()
+	if !s.HasTable() {
+		t.Fatal("Failed to create table User")
+	}
+}
