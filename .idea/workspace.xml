@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e5ebb7-d04e-444b-8c81-3533e3cd4ba0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gee-orm/dialect/dialect.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/dialect/dialect_sqlite3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/geeorm.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/schema/schema.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/schema/schema_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/session/raw.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/session/table.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/session/table_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/test_main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/dialect/dialect_mysql8.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-cache/testMutliNode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-cache/testMutliNode_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/log/log.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +46,13 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/张家魁"
+    "last_opened_file_path": "D:/github_projects/7Days-golang/gee-orm/dialect"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_projects\7Days-golang\gee-orm\dialect" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github_projects\7Days-golang\gee-orm" />
     </key>
@@ -123,7 +116,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add:gee-orm" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:gee-orm" />
+    <MESSAGE value="feat:&#10;添加GeeOrm session/table/dialect 相关模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:&#10;添加GeeOrm session/table/dialect 相关模块" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
