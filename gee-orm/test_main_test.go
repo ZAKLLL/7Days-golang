@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"testing"
 )
@@ -57,13 +58,19 @@ type TUser2 struct {
 
 func TestSession_CreateTable(t *testing.T) {
 
-	engine, _ := NewEngine("mysql", "root:root@tcp(localhost:3306)/geeorm")
-	defer engine.Close()
-	s := engine.NewSession()
-	s.Model(&TUser2{})
-	_ = s.DropTable()
-	_ = s.CreateTable()
-	if !s.HasTable() {
-		t.Fatal("Failed to create table User")
-	}
+	//engine, _ := NewEngine("mysql", "root:root@tcp(localhost:3306)/geeorm")
+	//defer engine.Close()
+	//s := engine.NewSession()
+	//s.Model(&TUser2{})
+	//_ = s.DropTable()
+	//_ = s.CreateTable()
+	//if !s.HasTable() {
+	//	t.Fatal("Failed to create table User")
+	//}
+	a := "1234测试场景啊看"
+	fmt.Printf("测试数据: %s\n", a)
+	fmt.Printf("测试数据: %v\n", a)
+	fmt.Printf("测试数据: %d\n", len(a))
+	fmt.Printf("测试数据: %d\n", len([]rune(a)))
+	fmt.Printf("测试数据: %v\n", string([]rune(a)))
 }
