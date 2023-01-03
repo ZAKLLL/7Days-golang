@@ -2,7 +2,7 @@ package clause
 
 import (
 	"fmt"
-	strings "strings"
+	"strings"
 )
 
 type generator func(values ...interface{}) (string, []interface{})
@@ -20,6 +20,7 @@ func init() {
 }
 
 func genBindVars(num int) string {
+	// ?,?,?,?
 	var vars []string
 	for i := 0; i < num; i++ {
 		vars = append(vars, "?")
