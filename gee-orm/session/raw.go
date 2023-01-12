@@ -2,6 +2,7 @@ package session
 
 import (
 	"database/sql"
+	"gee-orm/clause"
 	"gee-orm/dialect"
 	"gee-orm/log"
 	"gee-orm/schema"
@@ -12,6 +13,7 @@ type Session struct {
 	db       *sql.DB
 	dialect  dialect.Dialect
 	refTable *schema.Schema
+	clause   clause.Clause
 	sql      strings.Builder
 	sqlVars  []interface{}
 }
