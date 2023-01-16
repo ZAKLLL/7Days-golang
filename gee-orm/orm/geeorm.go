@@ -1,4 +1,4 @@
-package main
+package orm
 
 import (
 	"database/sql"
@@ -7,6 +7,7 @@ import (
 	"gee-orm/dialect"
 	"gee-orm/log"
 	"gee-orm/session"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type Engine struct {

@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e5ebb7-d04e-444b-8c81-3533e3cd4ba0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gee-orm/clause/clause_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/session/record.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee-orm/session/record_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/test/record_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/test/schema_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-orm/clause/clause.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/clause/clause.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/schema/schema.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/session/raw.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/session/raw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/clause/clause_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/test/clause_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/clause/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/clause/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/geeorm.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/orm/geeorm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/schema/schema_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/session/record.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/session/record.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/session/record_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/session/table.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/session/table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/test_main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/test/test_main_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,34 +64,12 @@
       <recent name="D:\github_projects\7Days-golang\gee-orm\dialect" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github_projects\7Days-golang\gee-orm\orm" />
+      <recent name="D:\github_projects\7Days-golang\gee-orm\test" />
       <recent name="D:\github_projects\7Days-golang\gee-orm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_Insert in gee-orm/session">
-    <configuration name="TestClause_Build in gee-orm/clause (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="7Days-golang" />
-      <working_directory value="$PROJECT_DIR$/gee-orm/clause" />
-      <root_directory value="$PROJECT_DIR$/gee-orm" />
-      <kind value="PACKAGE" />
-      <package value="gee-orm/clause" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestClause_Build\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestClause_Build in gee-orm/clause" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="7Days-golang" />
-      <working_directory value="$PROJECT_DIR$/gee-orm/clause" />
-      <root_directory value="$PROJECT_DIR$/gee-orm" />
-      <kind value="PACKAGE" />
-      <package value="gee-orm/clause" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestClause_Build\E$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestSession_Find in gee-orm/test">
     <configuration name="TestClause_Build/select in gee-orm/clause (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm/clause" />
@@ -111,6 +94,30 @@
       <pattern value="^\QTestClause_Build\E$/^\Qselect#01\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestSession_Find in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
+      <working_directory value="$PROJECT_DIR$/gee-orm/test" />
+      <root_directory value="$PROJECT_DIR$/gee-orm" />
+      <kind value="PACKAGE" />
+      <package value="gee-orm/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSession_Find\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Find in gee-orm/session" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="7Days-golang" />
+      <working_directory value="$PROJECT_DIR$/gee-orm/session" />
+      <root_directory value="$PROJECT_DIR$/gee-orm" />
+      <kind value="PACKAGE" />
+      <package value="gee-orm/session" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Find\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_Insert in gee-orm/session" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm/session" />
@@ -125,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSession_Find in gee-orm/test" />
+        <item itemvalue="Go Test.Test_Find in gee-orm/session" />
         <item itemvalue="Go Test.Test_Insert in gee-orm/session" />
         <item itemvalue="Go Test.TestClause_Build/select in gee-orm/clause (1)" />
         <item itemvalue="Go Test.TestClause_Build/select#01 in gee-orm/clause" />
-        <item itemvalue="Go Test.TestClause_Build in gee-orm/clause (1)" />
-        <item itemvalue="Go Test.TestClause_Build in gee-orm/clause" />
       </list>
     </recent_temporary>
   </component>
@@ -143,9 +150,26 @@
     <MESSAGE value="feat:新增mysql" />
     <MESSAGE value="feat: add Clause.go" />
     <MESSAGE value="add: cause.go" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: cause.go" />
+    <MESSAGE value="add: clause_test.go" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: clause_test.go" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://C:/Program Files/Go/src/reflect/value.go</url>
+          <line>2746</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="*(*&quot;int&quot;)(824633754048)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

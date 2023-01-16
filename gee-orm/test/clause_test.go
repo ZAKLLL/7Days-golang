@@ -1,17 +1,18 @@
-package clause
+package main
 
 import (
+	clause2 "gee-orm/clause"
 	"reflect"
 	"testing"
 )
 
 func testSelect(t *testing.T) {
-	var clause Clause
-	clause.Set(LIMIT, 3)
-	clause.Set(SELECT, "User", []string{"*"})
-	clause.Set(WHERE, "Name = ?", "Tom")
-	clause.Set(ORDERBY, "Age ASC")
-	sql, vars := clause.Build(SELECT, WHERE, ORDERBY, LIMIT)
+	var clause clause2.Clause
+	clause.Set(clause2.LIMIT, 3)
+	clause.Set(clause2.SELECT, "User", []string{"*"})
+	clause.Set(clause2.WHERE, "Name = ?", "Tom")
+	clause.Set(clause2.ORDERBY, "Age ASC")
+	sql, vars := clause.Build(clause2.SELECT, clause2.WHERE, clause2.ORDERBY, clause2.LIMIT)
 	t.Log(sql, vars)
 	if sql != "SELECT * FROM User WHERE Name = ? ORDER BY Age ASC LIMIT ?" {
 		t.Fatal("failed to build SQL")
