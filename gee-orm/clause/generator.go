@@ -5,6 +5,13 @@ import (
 	"strings"
 )
 
+/*
+*
+返回 对应sql 及 参数
+ex:
+
+	select ?,? from table
+*/
 type generator func(values ...interface{}) (string, []interface{})
 
 var generators map[Type]generator
@@ -17,6 +24,9 @@ func init() {
 	generators[LIMIT] = _limit
 	generators[WHERE] = _where
 	generators[ORDERBY] = _orderBy
+	generators[DELETE] = _delete
+	generators[COUNT] = _count
+	generators[UPDATE] = _update
 }
 
 func genBindVars(num int) string {
