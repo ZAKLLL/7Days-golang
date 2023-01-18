@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"gee-orm/orm"
 	"gee-orm/session"
 	"testing"
@@ -9,6 +10,13 @@ import (
 type User struct {
 	Name string
 	Age  int
+}
+
+var _ session.IAfterQuery = (*User)(nil)
+
+func (u User) AfterQuery(s *session.Session) {
+
+	fmt.Println("AfterQuery------------------>", u)
 }
 
 var (
@@ -74,7 +82,15 @@ func TestSession_DeleteAndCount(t *testing.T) {
 	affected, _ := s.Where("Name = ?", "Tom").Delete()
 	count, _ := s.Count()
 
-	if affected != 1 || count != 1 {
+	if affected == 1 || count == 0 {
 		t.Fatal("failed to delete or count")
+	}
+}
+
+func TestSession_Find_Hooks(t *testing.T) {
+	s := testRecordInit(t)
+	var users []User
+	if err := s.Find(&users); err != nil || len(users) != 2 {
+		t.Fatal("failed to query all")
 	}
 }

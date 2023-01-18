@@ -51,6 +51,7 @@ func (s *Session) Find(values interface{}) error {
 		if err := rows.Scan(values...); err != nil {
 			return err
 		}
+		s.CallMethod(AfterQuery, dest)
 		destSlice.Set(reflect.Append(destSlice, dest))
 	}
 	return rows.Close()
@@ -87,7 +88,7 @@ func (s *Session) Delete() (int64, error) {
 }
 
 func (s *Session) Count() (int64, error) {
-	s.clause.Set(clause.COUNT, s.RefTable())
+	s.clause.Set(clause.COUNT, s.RefTable().Name)
 	sql, vars := s.clause.Build(clause.COUNT, clause.WHERE)
 	row := s.Raw(sql, vars...).QueryRow()
 	var tmp int64

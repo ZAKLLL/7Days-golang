@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e5ebb7-d04e-444b-8c81-3533e3cd4ba0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gee-orm/session/hooks.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee-orm/session/transaction.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gee-orm/clause/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/clause/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/orm/geeorm.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/orm/geeorm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gee-orm/session/raw.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/session/raw.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-orm/session/record.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/session/record.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gee-orm/test/record_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gee-orm/test/record_test.go" afterDir="false" />
     </list>
@@ -61,8 +64,8 @@
       <recent name="D:\github_projects\7Days-golang\gee-orm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestSession_Update in gee-orm/test">
-    <configuration name="TestSession_Find in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestSession_Find_Hooks in gee-orm/test">
+    <configuration name="TestSession_DeleteAndCount in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm/test" />
       <root_directory value="$PROJECT_DIR$/gee-orm" />
@@ -71,10 +74,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSession_Find\E$" />
+      <pattern value="^\QTestSession_DeleteAndCount\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSession_Limit in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSession_Find_Hooks in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
       <working_directory value="$PROJECT_DIR$/gee-orm/test" />
       <root_directory value="$PROJECT_DIR$/gee-orm" />
@@ -83,7 +86,7 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSession_Limit\E$" />
+      <pattern value="^\QTestSession_Find_Hooks\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSession_Update in gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -98,37 +101,35 @@
       <pattern value="^\QTestSession_Update\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_Find in gee-orm/session" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="go test gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
-      <working_directory value="$PROJECT_DIR$/gee-orm/session" />
+      <working_directory value="$PROJECT_DIR$/gee-orm/test" />
       <root_directory value="$PROJECT_DIR$/gee-orm" />
       <kind value="PACKAGE" />
-      <package value="gee-orm/session" />
+      <package value="gee-orm/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_Find\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_Insert in gee-orm/session" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="gobench gee-orm/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="7Days-golang" />
-      <working_directory value="$PROJECT_DIR$/gee-orm/session" />
+      <working_directory value="$PROJECT_DIR$/gee-orm/test" />
       <root_directory value="$PROJECT_DIR$/gee-orm" />
       <kind value="PACKAGE" />
-      <package value="gee-orm/session" />
+      <package value="gee-orm/test" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Insert\E$" />
+      <framework value="gobench" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSession_Find_Hooks in gee-orm/test" />
+        <item itemvalue="Go Test.gobench gee-orm/test" />
+        <item itemvalue="Go Test.go test gee-orm/test" />
+        <item itemvalue="Go Test.TestSession_DeleteAndCount in gee-orm/test" />
         <item itemvalue="Go Test.TestSession_Update in gee-orm/test" />
-        <item itemvalue="Go Test.TestSession_Limit in gee-orm/test" />
-        <item itemvalue="Go Test.TestSession_Find in gee-orm/test" />
-        <item itemvalue="Go Test.Test_Find in gee-orm/session" />
-        <item itemvalue="Go Test.Test_Insert in gee-orm/session" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +145,8 @@
     <MESSAGE value="add: cause.go" />
     <MESSAGE value="add: clause_test.go" />
     <MESSAGE value="add： 不知道add个啥" />
-    <option name="LAST_COMMIT_MESSAGE" value="add： 不知道add个啥" />
+    <MESSAGE value="add： 添加链式调用，添加Update Count First 函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="add： 添加链式调用，添加Update Count First 函数" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -164,5 +166,9 @@
         <watch expression="*(*&quot;int&quot;)(824633754048)" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/7Days_golang$gobench_gee_orm_test.out" NAME="gobench gee-orm/test Coverage Results" MODIFIED="1673920312342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/7Days_golang$go_test_gee_orm_test.out" NAME="go test gee-orm/test Coverage Results" MODIFIED="1673920245140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
